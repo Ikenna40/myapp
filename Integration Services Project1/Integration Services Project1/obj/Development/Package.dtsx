@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="6/28/2020 3:53:25 AM"
@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{41C5D008-F6F3-4D65-AA12-94A3B3FDA893}">
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{21217BB4-687F-4FEF-8BC2-CE15C0DF0DEF}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -32,13 +32,13 @@
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\EST - TEST"
+      DTS:refId="Package\Execute SQL Task"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
-      DTS:Description="Test query for GitHub"
+      DTS:Description="Execute SQL Task"
       DTS:DTSID="{8ABBD664-BBDD-4336-91AC-A5A447809478}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="EST - TEST"
+      DTS:ObjectName="Execute SQL Task"
       DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -62,7 +62,7 @@
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
           Size="163,42"
-          Id="Package\EST - TEST"
+          Id="Package\Execute SQL Task"
           TopLeft="0.5,195.5" />
       </GraphLayout>
     </LayoutInfo>
