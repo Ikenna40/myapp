@@ -1,0 +1,103 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/25/2021 2:40:19 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="IKENNAHPENVY"
+  DTS:CreatorName="IKENNAHPENVY\hp"
+  DTS:DTSID="{95F0C43B-F69C-4B7E-903F-B5D74B8DA270}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.157"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="ReadEmailData"
+  DTS:PackageType="5"
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{8E24D0FC-4E41-40E0-95E4-7109E9CFE837}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{1B5CCC94-199E-403B-84DA-B51FF718A000}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="MailList1">
+      <DTS:VariableValue
+        DTS:DataSubType="ManagedSerializable"
+        DTS:DataType="13">
+        <SOAP-ENV:Envelope xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+          <SOAP-ENV:Body>
+            <xsd:anyType
+              id="ref-1"></xsd:anyType>
+          </SOAP-ENV:Body>
+        </SOAP-ENV:Envelope>
+      </DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Get Mail List"
+      DTS:CreationName="CozyRoc.ReceiveMailTask"
+      DTS:Description="Receive Mail Task"
+      DTS:DTSID="{66A4CB1B-AF79-40D9-8CCA-BFA7716FE580}"
+      DTS:ExecutableType="CozyRoc.ReceiveMailTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Get Mail List"
+      DTS:TaskContact="Receive Mail Task; COZYROC LLC; SSIS+; © 2006-2020 COZYROC LLC; All Rights Reserved; http://www.cozyroc.com/;"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ReceiveMailData
+          MailConnection=""
+          StopOnFailure="True"
+          Action="GetList"
+          Result=""
+          IsLocalVariable="False"
+          Local=""
+          OverwriteExisting="False"
+          MailVariable=""
+          IsFilterVariable="False"
+          Filter=""
+          Decrypt="False"
+          IsPrivateKeyVariable="False"
+          PrivateKey=""
+          VerifySignature="False"
+          IsCertificateVariable="False"
+          Certificate=""
+          IsSenderVariable="False"
+          Sender=""
+          IsDateVariable="False"
+          Date=""
+          IsSubjectVariable="False"
+          Subject=""
+          IsBodyTextVariable="False"
+          BodyText=""
+          IsBodyHtmlVariable="False"
+          BodyHtml=""
+          IsAttachmentVariable="False"
+          Attachment="" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="137,42"
+          Id="Package\Get Mail List"
+          TopLeft="546,253" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
