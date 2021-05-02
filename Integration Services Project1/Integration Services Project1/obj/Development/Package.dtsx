@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="5"
-  DTS:VersionGUID="{E0288160-E46B-4C34-B57C-0821CF042F9B}">
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{735086C9-663C-47EE-BCC7-6681C2DDC2A3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -44,7 +44,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{CD06E1E5-3F93-4198-9FDB-F85F464F22C4}"
-          SQLTask:SqlStatementSource="Select 1" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="Select 1/0" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -68,7 +68,7 @@
           Text="Test Query"
           ParentId="Package"
           FontInfo="{assembly:Null}"
-          Size="85,60"
+          Size="85,40"
           Id="04f9744a-f32f-4602-a505-d3956902bfb0"
           TopLeft="180,193" />
       </GraphLayout>
